@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <TextView
+        android:text="Your Order"
+        android:id="@+id/textView21"
+        android:layout_width="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:textSize="90px"
+        android:gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="Take me back to main page"
+        android:layout_height="50dp"
+        android:id="@+id/back_to_main_page"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:layout_width="450dp" />
+
+    <Button
+        android:text="I Got My Delivery !"
+        android:layout_height="50dp"
+        android:id="@+id/del"
+        android:layout_width="185dp"
+        android:layout_alignTop="@+id/cancel"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="Cancel My Order"
+        android:layout_height="50dp"
+        android:id="@+id/cancel"
+        android:layout_marginBottom="51dp"
+        android:layout_width="185dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:text="TOTAL :"
+        android:layout_above="@+id/cancel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/textView23"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:fontFamily="cursive" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:layout_height="335dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/order"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_height="40dp"
+        android:layout_width="160dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

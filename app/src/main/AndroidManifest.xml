@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shweta.railway"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserActivity">
+
+        </activity>
+
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".Feedback"></activity>
+        <activity android:name=".BookTickets"></activity>
+        <activity android:name=".Payment"></activity>
+        <activity android:name=".Debit_Card"></activity>
+        <activity android:name=".Train_Routes"></activity>
+        <activity android:name=".FoodMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Feedback_Completed"></activity>
+        <activity android:name=".Cart"></activity>
+        <activity android:name=".BookingRecords"></activity>
+        <activity android:name=".Credit_card"></activity>
+        <activity android:name=".COD"></activity>
+        <activity android:name=".MyOrder"></activity>
+        <activity android:name=".Payment_Food"></activity>
+        <activity android:name=".Ticket_Cancellation"></activity>
+
+    </application>
+
+</manifest>

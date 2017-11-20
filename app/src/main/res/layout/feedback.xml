@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="How good were our services ?"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textview1"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ratingBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_height="150dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:background="#ddd"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="Any Complaints Or Compliments !"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView7"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textview1" />
+
+    <Button
+        android:text="Done"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/done"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="15sp"
+        android:textColor="#555"/>
+</RelativeLayout>

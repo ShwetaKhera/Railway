@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Train Number"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#0b84aa"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/train_no"
+        android:background="#ddd"/>
+
+    <TextView
+        android:text="Number Of Tickets"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/train_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#0b84aa"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:id="@+id/no_of_tickets"
+        android:background="#ddd"/>
+
+    <Button
+        android:text="Proceed Forward"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/proceed"
+        android:layout_below="@+id/no_of_tickets"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:textColor="#0b84aa"
+        android:textSize="25sp"
+        android:fontFamily="cursive"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/proceed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:id="@+id/textView10"
+        android:textSize="25sp"
+        android:textColor="#0b84aa"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        />
+
+</RelativeLayout>
